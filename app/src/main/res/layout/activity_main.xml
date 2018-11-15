@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/groceryList"
+        android:layout_width="match_parent"
+        android:layout_height="437dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:paddingTop="5dp"
+        android:layout_below="@id/add_item_button"/>
+
+    <Button
+        android:id="@+id/add_item_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="8dp"
+        android:text="Add Item"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/total"
+        android:layout_width="187dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/add_item_button"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="80dp"
+        android:layout_toEndOf="@id/add_item_button"
+        android:text="0 HUF"
+        android:textAlignment="viewEnd"
+        android:textSize="25dp" />
+
+</RelativeLayout>
